@@ -1,0 +1,59 @@
+.note-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    max-height: 300px
+    /* Added for position context */
+}
+
+.note-title {
+    margin-top: 0;
+    color: #333;
+    font-weight: bold;
+    /* Enhancing title appearance */
+}
+
+.note-content {
+    color: #666;
+    margin-bottom: 10px;
+    /* Additional margin for spacing */
+    overflow: hidden;
+    /* Hide overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis for overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+.note-actions {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.note-actions button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.note-actions button:hover {
+    background-color: #0056b3;
+}
+
+.note-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Additional styles for ellipsis tooltip */

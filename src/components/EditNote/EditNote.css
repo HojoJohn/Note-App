@@ -1,0 +1,67 @@
+/* Styles scoped to the edit note page */
+.edit-note-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Quill Editor styles */
+.edit-note-container .react-quill {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.edit-note-container .ql-container {
+    /* This targets the Quill editor's container */
+    height: auto;
+    max-height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.edit-note-container .ql-editor {
+    /* This targets the editable area within Quill */
+    min-height: 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Input and button styles */
+.form-group input[type="text"],
+.edit-note-container button {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-note-container button {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-note-container button:hover {
+    background-color: #357ae8;
+}
+
+/* Adjust the form-group label if necessary */
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Additional styles can be added below if needed */

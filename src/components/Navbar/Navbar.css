@@ -1,0 +1,51 @@
+.navbar {
+    background: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    
+    
+    /* Make this match the width of your editor container */
+    margin: 0 auto;
+    /* Center the navbar */
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    line-height: 80px;
+    margin-right: 1rem;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    background-color: #575757;
+    border-radius: 4px;
+    transition: all 0.2s ease-out;
+}

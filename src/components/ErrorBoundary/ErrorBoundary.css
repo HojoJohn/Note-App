@@ -1,0 +1,15 @@
+.error-boundary {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: #ffebeb;
+}
+
+.error-boundary h2 {
+    color: red;
+}
+
+details {
+    font-size: 14px;
+}

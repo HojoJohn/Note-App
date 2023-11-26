@@ -1,0 +1,98 @@
+
+
+/* Styles scoped to the add note page */
+.add-note-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 40px 0;
+}
+
+/* Navbar and footer should match the width of the note container */
+.add-note-page .navbar,
+.add-note-page .footer {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Main container for the add note form */
+.add-note-container {
+    width: 90%;
+    /* Makes the container width responsive */
+    max-width: 1200px;
+    /* Increases the maximum width */
+    margin: 20px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 35px;
+}
+
+/* Quill Editor styles */
+.add-note-container .react-quill {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.add-note-container .ql-container {
+    /* This targets the Quill editor's container */
+    height: auto;
+    max-height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+.add-note-container .ql-editor {
+    /* This targets the editable area within Quill */
+    min-height: 400px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Input and button styles */
+.form-group input[type="text"],
+.add-note-container button {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-note-container button {
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.add-note-container button:hover {
+    background-color: #357ae8;
+}
+
+/* Ensure the footer is at the bottom of the page */
+.add-note-page .footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+/* Adjust the form-group label if necessary */
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* You can add more custom styles below */

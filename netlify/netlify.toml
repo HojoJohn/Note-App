@@ -1,0 +1,37 @@
+# Netlify settings file
+[build]
+  # Directory with your built HTML files and assets
+  publish = "build"
+  # Your build command
+  command = "npm run build"
+
+# Serverless Functions configuration
+[functions]
+  # Directory containing your serverless functions
+  directory = "netlify/functions"
+  # Optional: Increase the timeout for functions
+  timeout = 10
+  # Optional: Increase the memory allocated for functions
+  memory = 128
+
+# Additional build settings
+[context.production]
+  # Environment variables specific to the production context
+  environment = { 
+    REACT_APP_API_URL = "https://aquamarine-wisp-fa0cd4.netlify.app/"
+    # MONGO_URI and JWT_SECRET should be set in Netlify's UI
+  }
+
+[context.deploy-preview]
+  # Settings for deploy previews
+  environment = { 
+    REACT_APP_API_URL = "https://aquamarine-wisp-fa0cd4.netlify.app/"
+    # MONGO_URI and JWT_SECRET should be set in Netlify's UI for previews
+  }
+
+[context.branch-deploy]
+  # Settings for branch deploys
+  environment = { 
+    REACT_APP_API_URL = "https://aquamarine-wisp-fa0cd4.netlify.app/"
+    # MONGO_URI and JWT_SECRET should be set in Netlify's UI for branch deploys
+  }

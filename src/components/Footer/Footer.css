@@ -1,0 +1,18 @@
+.footer {
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    width: 100%;
+    
+    /* Make this match the width of your editor container */
+    margin: 0 auto;
+    /* Center the footer */
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 0.9em;
+    color: #333;
+}
